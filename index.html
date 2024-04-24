@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTQ Restaurant</title>
+    <style>
+        /* Basic CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Default text color */
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: inline-block;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #333;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .menu-item {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        form input[type="submit"] {
+            background-color: #ffcc00;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        form input[type="submit"]:hover {
+            background-color: #ffdd33;
+        }
+
+        /* Increased contrast for larger text */
+        h1, h2, h3 {
+            color: #222; /* Darker text color for headings */
+        }
+        p, label {
+            color: #444; /* Even darker text color for paragraphs and labels */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>QTQ Restaurant</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#product">Product</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Welcome to QTQ Restaurant</h2>
+        <p>We offer a wide variety of delicious dishes at affordable prices. Check out our menu below:</p>
+        <div class="menu-item">
+            <h3>Specialty Dish</h3>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ante id elit imperdiet imperdiet. Sed at ipsum vitae elit eleifend fermentum. Nullam sollicitudin efficitur vestibulum.</p>
+            <p>Price: $10.99</p>
+        </div>
+        <div class="menu-item">
+            <h3>Signature Dish</h3>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ante id elit imperdiet imperdiet. Sed at ipsum vitae elit eleifend fermentum. Nullam sollicitudin efficitur vestibulum.</p>
+            <p>Price: $12.99</p>
+        </div>
+        <div class="menu-item">
+            <h3>Vegetarian Delight</h3>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ante id elit imperdiet imperdiet. Sed at ipsum vitae elit eleifend fermentum. Nullam sollicitudin efficitur vestibulum.</p>
+            <p>Price: $8.99</p>
+        </div>
+
+        <form>
+            <h2>Contact Us</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 QTQ Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
